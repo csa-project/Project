@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 
-public class NinjaSprite extends Sprites {
+public class NinjaSprite extends Sprite {
     public static final int price = 250;
     public static final int radius = 100;
     public static int projectileDelay = 500;
@@ -33,7 +33,7 @@ public class NinjaSprite extends Sprites {
                 }
             }
         } else {
-            currentDelay += BloonsWindow.FPSDelay;
+            currentDelay += Window.FPSDelay;
         }
     }
 

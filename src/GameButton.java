@@ -4,7 +4,7 @@ public class GameButton {
 
     boolean hover = false;
 
-    public GameButton(int r, int y, int width, int height) {
+    public GameButton(int x, int y, int width, int height) {
         this.x = x;
         this.y = y;
         this.width = width;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import javax.swing.*;
 
-public class BloonsWindow extends JPanel implements ActionListener, KeyListener, MouseListener, MouseMotionListener {
+public class Window extends JPanel implements ActionListener, KeyListener, MouseListener, MouseMotionListener {
     private static final long serialVersionUID = 1L;
 
     // Amount of milliseconds between frames
@@ -31,7 +31,7 @@ public class BloonsWindow extends JPanel implements ActionListener, KeyListener,
     GameButton ninjaSpriteButton = new GameButton(BRunner.WIDTH - 100, BRunner.PATH_WIDTH, 50, 50);
     GameButton superMonkeySpriteButton = new GameButton(BRunner.WIDTH - 100, BRunner.PATH_WIDTH * 2, 50, 50);
 
-    public BloonsWindow() {
+    public Window() {
         t.start();
         addKeyListener(this);
         addMouseMotionListener(this);

@@ -27,13 +27,13 @@ public class SuperMonkeySprite extends Sprite {
                 // Using distance formula to see if bloon is within range
                 if (Math.sqrt(Math.pow(xCoordOfBloon - (x + BRunner.PATH_WIDTH / 2), 2) + Math.pow(yCoordOfBloon - (y + BRunner.PATH_WIDTH / 2), 2)) < radius) {
                     // Initiate new projectile
-                    projectiles.add(new BRunner(x + (BRunner.PATH_WIDTH / 2), y + (BRunner.PATH_WIDTH / 2), xCoordOfBloon, yCoordOfBloon, 10));
+                    projectiles.add(new Dart(x + (BRunner.PATH_WIDTH / 2), y + (BRunner.PATH_WIDTH / 2), xCoordOfBloon, yCoordOfBloon, 10));
                     currentDelay = 0;
                     return;
                 }
             }
         } else {
-            currentDelay += BloonsWindow.FPSDelay;
+            currentDelay += Window.FPSDelay;
         }
     }
 

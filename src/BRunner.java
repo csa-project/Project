@@ -87,7 +87,7 @@ import javax.swing.*;
             JFrame f = new JFrame("Bloons Tower Defense");
             f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            BloonsWindow w = new BloonsWindow();
+            Window w = new Window();
             f.add(w);
             f.setSize(WIDTH, HEIGHT);
             f.setResizable(false);
